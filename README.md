@@ -10,7 +10,7 @@ It showcases my skills, projects, and provides an easy way to connect with me.
 - Smooth animations and transitions  
 - Dedicated sections: Home, About, Skills, Projects, Contact  
 - Floating profile image animation  
-
+- Horizontal scrolling project showcase  
 
 ---
 
