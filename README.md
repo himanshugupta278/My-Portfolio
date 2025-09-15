@@ -27,7 +27,7 @@ It showcases my skills, projects, and provides an easy way to connect with me.
 ---
 
 ##  Screenshots
-![Portfolio Screenshot](image/Screenshotss.png)
+![Portfolio Screenshot](image/portfolioimage.png)
 
 ---
 
