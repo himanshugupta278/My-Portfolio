@@ -42,18 +42,41 @@ nav ul li a:hover { color:#00ffff; }
 .section-content.show { opacity:1; transform:translateY(0); }
 
 /* Home */
-.home-content { display:flex; align-items:center; justify-content:space-between; max-width:1200px; width:100%; }
-.home-content .text { max-width:600px; }
-.home-content .text h2 { font-size:2.5rem; }
-.highlight { color:#00ffff; }
-.home-img img { 
-  width:400px; 
-  border:1px solid #012929; 
-  animation:float 3s ease-in-out infinite;
-  box-shadow:  4px 4px 6px rgb(5, 5, 5);
-
+.home-content { 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  max-width: 1200px; 
+  width: 100%; 
 }
-@keyframes float { 0%{transform:translateY(0);}50%{transform:translateY(-15px);}100%{transform:translateY(0);} }
+
+.home-content .text { 
+  max-width: 600px; 
+}
+
+.home-content .text h2 { 
+  font-size: 2.5rem; 
+}
+
+.highlight { 
+  color: #00ffff; 
+}
+
+.home-img img {
+  width: 400px;
+  border: 1px solid #012929;
+  animation: float 3s ease-in-out infinite;
+  box-shadow:;
+  /* optional: margin-left if you want extra space on left */
+  margin-left: 200px;
+}
+
+@keyframes float {  
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
 
 /* about*/
 h2{ color: #00ffff;}
@@ -135,3 +158,73 @@ h2{ color: #00ffff;}
 
 /* Footer */
 footer { position: fixed; bottom:0; width:100%; text-align:center; background:rgba(0,0,0,0.8); padding:15px; }
+
+
+/* === Modern Gradient Background === */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(-45deg, #05cdff, #d203fc, #2f00ffa9, #ed3bf3);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #f1f1f1;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* === Headings & Text === */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  text-shadow: 0px 0px 10px rgba(255,255,255,0.3);
+}
+
+p, li, span {
+  color: #e0e0e0;
+}
+
+/* === Buttons & Links === */
+button, .btn, a {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: white !important;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+button:hover, .btn:hover, a:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px #00fff2;
+}
+
+/* === Cards === */
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  transition: all 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* === Scroll Animations === */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
